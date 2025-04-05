@@ -1,5 +1,7 @@
 <?php
 
+include_once "../DAL/conn.php";
+
 class Reports {
     private $conn;
 
