@@ -43,7 +43,7 @@ class Employees {
         $checkStmt = $this->conn->prepare($checkSql);
         $checkStmt->bindParam(":email", $email);
         $checkStmt->execute();
-        if ($checkStmt->fetchColumn() > 0) {
+        if ($checkStmt->fetchColumn() === 1) {
             return 'EMAIL_ALREADY_EXISTS';
         }
 
