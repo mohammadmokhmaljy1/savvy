@@ -1,6 +1,6 @@
 <?php
 
-include_once "../DAL/conn.php";
+include_once "conn.php";
 
 class Reports {
     private $conn;

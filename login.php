@@ -8,7 +8,7 @@
 <body>
     <div class="container f-cen bg-45">
         <form action="" method="post" autocomplete="on" id="login-form" class="g24 f-cen f-col bg-secondary p24 r12 box-shadow">
-            <img src="../assets/images/logo.jpg" alt="" style="width: 100px;" class="r50">
+            <img src="assets/images/logo.jpg" alt="" style="width: 100px;" class="r50">
 
             <h2>تسجيل الدخول</h2>
 
@@ -27,7 +27,7 @@
             <?php
             // كود تسجيل الدخول من هنا
             if (isset($_POST["login"])) {
-                include_once "../BL/Employees.php";
+                include_once "services/Employees.php";
                 Employees:
                 $e = new Employees();
                 $email = $_POST["email"];
@@ -53,7 +53,7 @@
         </form>
     </div>
 
-    <script src="../assets/scripts/validation.js"></script>
+    <script src="assets/scripts/validation.js"></script>
 </body>
 
 </html>

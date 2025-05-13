@@ -1,5 +1,5 @@
 <?php 
-include_once "../DAL/conn.php";
+include_once "conn.php";
 
 class Projects {
     private $conn;
